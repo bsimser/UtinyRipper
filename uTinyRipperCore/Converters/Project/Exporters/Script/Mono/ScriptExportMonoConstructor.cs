@@ -1,12 +1,12 @@
-﻿using Mono.Cecil;
+using Mono.Cecil;
 using System;
 using System.Collections.Generic;
 
 namespace uTinyRipper.Converters.Script.Mono
 {
-	public sealed class ScriptExportMonoMethod : ScriptExportMethod
+	public sealed class ScriptExportMonoConstructor : ScriptExportConstructor
 	{
-		public ScriptExportMonoMethod(MethodDefinition method)
+		public ScriptExportMonoConstructor(MethodDefinition method)
 		{
 			Method = method ?? throw new ArgumentNullException(nameof(method));
 		}
